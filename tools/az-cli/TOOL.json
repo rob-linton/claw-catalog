@@ -1,0 +1,27 @@
+{
+  "install_commands": "curl -fsSL https://aka.ms/InstallAzureCLIDeb | bash",
+  "check_command": "az version",
+  "auth_script": "az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET --tenant $AZURE_TENANT_ID && az account show",
+  "env_vars": [
+    {
+      "key": "AZURE_TENANT_ID",
+      "description": "Azure Active Directory tenant ID.",
+      "required": true
+    },
+    {
+      "key": "AZURE_CLIENT_ID",
+      "description": "Service principal application (client) ID.",
+      "required": true
+    },
+    {
+      "key": "AZURE_CLIENT_SECRET",
+      "description": "Service principal client secret.",
+      "required": true
+    },
+    {
+      "key": "AZURE_SUBSCRIPTION_ID",
+      "description": "Default Azure subscription ID.",
+      "required": false
+    }
+  ]
+}

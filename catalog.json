@@ -6,7 +6,7 @@
       "id": "create-skill",
       "name": "Create Agent Skill",
       "version": "1.0.0",
-      "author": "ClaudeCodeClaw",
+      "author": "Claw Machine",
       "description": "Creates new Agent Skills following the agentskills.io specification.",
       "tags": ["meta", "authoring", "skills"]
     }
@@ -16,7 +16,7 @@
       "id": "gh-cli",
       "name": "GitHub CLI",
       "version": "1.0.0",
-      "author": "ClaudeCodeClaw",
+      "author": "Claw Machine",
       "description": "GitHub CLI for repo operations and GitHub API access. Pre-installed in sandbox.",
       "tags": ["github", "git", "devops", "vcs"]
     }

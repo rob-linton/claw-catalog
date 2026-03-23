@@ -1,14 +1,14 @@
-# ClaudeCodeClaw Catalog
+# Claw Machine Catalog
 
-Curated skills and tools for [ClaudeCodeClaw](https://github.com/rob-linton/claudecodeclaw).
+Curated skills and tools for [Claw Machine](https://github.com/rob-linton/clawmachine).
 
 ## How It Works
 
-This repo serves as the default catalog for ClaudeCodeClaw. When configured, the system auto-syncs skills and tools from this repo on startup.
+This repo serves as the default catalog for Claw Machine. When configured, the system auto-syncs skills and tools from this repo on startup.
 
 ### Setup
 
-In ClaudeCodeClaw Settings, set **Catalog URL** to:
+In Claw Machine Settings, set **Catalog URL** to:
 ```
 https://raw.githubusercontent.com/rob-linton/claw-catalog/main/catalog.json
 ```
@@ -36,4 +36,4 @@ To add a skill or tool:
 3. Update `catalog.json` with the new entry
 4. Submit a PR
 
-See [SKILL-FORMAT.md](https://github.com/rob-linton/claudecodeclaw/blob/main/Documents/SKILL-FORMAT.md) and [TOOL-FORMAT.md](https://github.com/rob-linton/claudecodeclaw/blob/main/Documents/TOOL-FORMAT.md) for package format specifications.
+See [SKILL-FORMAT.md](https://github.com/rob-linton/clawmachine/blob/main/Documents/SKILL-FORMAT.md) and [TOOL-FORMAT.md](https://github.com/rob-linton/clawmachine/blob/main/Documents/TOOL-FORMAT.md) for package format specifications.

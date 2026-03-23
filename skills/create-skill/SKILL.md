@@ -125,7 +125,7 @@ After creating, verify:
 
 ## Step 6: Package as ZIP
 
-For distribution via ClaudeCodeClaw:
+For distribution via Claw Machine:
 1. Create a ZIP of the skill directory
 2. Upload via Skills → Import ZIP in the admin console
 3. The ZIP root should be the skill directory (e.g., `code-review/SKILL.md`)

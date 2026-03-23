@@ -1,0 +1,10 @@
+{
+  "format": "claw-skill-v1",
+  "id": "create-skill",
+  "name": "Create Agent Skill",
+  "version": "1.0.0",
+  "author": "ClaudeCodeClaw",
+  "license": "MIT",
+  "description": "Creates new Agent Skills following the agentskills.io specification. Use when asked to create a skill, build a new capability, or package instructions as a skill.",
+  "tags": ["meta", "authoring", "skills"]
+}

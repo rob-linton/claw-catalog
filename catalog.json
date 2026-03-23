@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "catalog_url": "https://github.com/rob-linton/claw-catalog",
+  "skills": [
+    {
+      "id": "create-skill",
+      "name": "Create Agent Skill",
+      "version": "1.0.0",
+      "author": "ClaudeCodeClaw",
+      "description": "Creates new Agent Skills following the agentskills.io specification.",
+      "tags": ["meta", "authoring", "skills"]
+    }
+  ],
+  "tools": [
+    {
+      "id": "gh-cli",
+      "name": "GitHub CLI",
+      "version": "1.0.0",
+      "author": "ClaudeCodeClaw",
+      "description": "GitHub CLI for repo operations and GitHub API access. Pre-installed in sandbox.",
+      "tags": ["github", "git", "devops", "vcs"]
+    }
+  ]
+}

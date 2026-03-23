@@ -1,0 +1,10 @@
+{
+  "format": "claw-tool-v1",
+  "id": "gh-cli",
+  "name": "GitHub CLI",
+  "version": "1.0.0",
+  "author": "ClaudeCodeClaw",
+  "license": "MIT",
+  "description": "GitHub CLI (gh) for repo operations, PR management, issue tracking, and GitHub API access. Pre-installed in the sandbox image. Requires GH_TOKEN for authentication.",
+  "tags": ["github", "git", "devops", "vcs"]
+}

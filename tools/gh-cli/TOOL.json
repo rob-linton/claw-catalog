@@ -1,0 +1,11 @@
+{
+  "install_commands": "",
+  "check_command": "gh --version",
+  "env_vars": [
+    {
+      "key": "GH_TOKEN",
+      "description": "GitHub Personal Access Token (classic or fine-grained). Required for all gh operations.",
+      "required": true
+    }
+  ]
+}

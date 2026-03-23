@@ -2,7 +2,7 @@
   "format": "claw-tool-v1",
   "id": "aws-cli",
   "name": "AWS CLI",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Claw Machine",
   "license": "MIT",
   "description": "AWS CLI v2 for managing AWS services. Installed on demand in sandbox containers. Requires AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY for authentication.",

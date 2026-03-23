@@ -1,0 +1,22 @@
+{
+  "install_commands": "curl -fsSL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o /tmp/awscliv2.zip && unzip -q /tmp/awscliv2.zip -d /tmp && /tmp/aws/install && rm -rf /tmp/awscliv2.zip /tmp/aws",
+  "check_command": "aws --version",
+  "auth_script": "aws sts get-caller-identity",
+  "env_vars": [
+    {
+      "key": "AWS_ACCESS_KEY_ID",
+      "description": "AWS access key ID for programmatic access.",
+      "required": true
+    },
+    {
+      "key": "AWS_SECRET_ACCESS_KEY",
+      "description": "AWS secret access key.",
+      "required": true
+    },
+    {
+      "key": "AWS_DEFAULT_REGION",
+      "description": "Default AWS region (e.g., us-east-1, ap-southeast-2).",
+      "required": false
+    }
+  ]
+}

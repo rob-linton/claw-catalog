@@ -19,6 +19,14 @@
       "author": "Claw Machine",
       "description": "GitHub CLI for repo operations and GitHub API access. Pre-installed in sandbox.",
       "tags": ["github", "git", "devops", "vcs"]
+    },
+    {
+      "id": "aws-cli",
+      "name": "AWS CLI",
+      "version": "1.0.0",
+      "author": "Claw Machine",
+      "description": "AWS CLI v2 for managing AWS services. Installed on demand in sandbox containers.",
+      "tags": ["aws", "cloud", "devops", "infrastructure"]
     }
   ]
 }

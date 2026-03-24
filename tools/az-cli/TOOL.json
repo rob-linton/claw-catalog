@@ -2,6 +2,7 @@
   "install_commands": "curl -fsSL https://aka.ms/InstallAzureCLIDeb | bash",
   "check_command": "az version",
   "auth_script": "az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET --tenant $AZURE_TENANT_ID && az account show",
+  "skill_content": "# Azure CLI\n\nThe Azure CLI is installed and authenticated via service principal.\n\n## Common commands\n\n```bash\n# Resource groups\naz group list --output table\naz group create --name myRG --location eastus\n\n# Virtual machines\naz vm list --output table\naz vm start --resource-group myRG --name myVM\naz vm stop --resource-group myRG --name myVM\n\n# Storage\naz storage account list --output table\naz storage blob upload --account-name myAccount --container-name myContainer --file data.csv --name data.csv\n\n# App Service\naz webapp list --output table\naz webapp log tail --resource-group myRG --name myApp\n\n# Key Vault\naz keyvault secret list --vault-name myVault\naz keyvault secret show --vault-name myVault --name mySecret\n\n# Container instances\naz container list --output table\n```\n\n## Output formats\nUse `--output json|table|tsv|yaml` or `--query` (JMESPath) to filter results.",
   "env_vars": [
     {
       "key": "AZURE_TENANT_ID",

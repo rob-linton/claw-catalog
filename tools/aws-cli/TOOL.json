@@ -2,6 +2,7 @@
   "install_commands": "curl -fsSL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o /tmp/awscliv2.zip && unzip -q /tmp/awscliv2.zip -d /tmp && /tmp/aws/install && rm -rf /tmp/awscliv2.zip /tmp/aws",
   "check_command": "aws --version",
   "auth_script": "aws sts get-caller-identity",
+  "skill_content": "# AWS CLI v2\n\nThe AWS CLI is installed and authenticated via environment variables.\n\n## Common commands\n\n```bash\n# S3 operations\naws s3 ls\naws s3 cp file.txt s3://bucket/path/\naws s3 sync ./local/ s3://bucket/prefix/\n\n# EC2\naws ec2 describe-instances --query 'Reservations[].Instances[].{ID:InstanceId,State:State.Name}'\naws ec2 start-instances --instance-ids i-1234567890abcdef0\n\n# Lambda\naws lambda list-functions\naws lambda invoke --function-name myFunc output.json\n\n# STS (verify credentials)\naws sts get-caller-identity\n\n# CloudFormation\naws cloudformation describe-stacks --stack-name myStack\n\n# Logs\naws logs tail /aws/lambda/myFunc --follow\n```\n\n## Output formats\nUse `--output json|table|text` or `--query` (JMESPath) to filter results.",
   "env_vars": [
     {
       "key": "AWS_ACCESS_KEY_ID",

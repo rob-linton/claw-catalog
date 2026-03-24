@@ -2,9 +2,9 @@
   "format": "claw-tool-v1",
   "id": "az-cli",
   "name": "Azure CLI",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Claw Machine",
   "license": "MIT",
-  "description": "Azure CLI for managing Azure resources. Installed on demand in sandbox containers. Authenticates via service principal credentials.",
+  "description": "Azure CLI for managing Azure resources. Authenticates via service principal. Requires AZURE_TENANT_ID, AZURE_CLIENT_ID, and AZURE_CLIENT_SECRET.",
   "tags": ["azure", "cloud", "devops", "infrastructure"]
 }

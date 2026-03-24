@@ -2,6 +2,7 @@
   "install_commands": "apt-get update && apt-get install -y --no-install-recommends msmtp msmtp-mta ca-certificates && rm -rf /var/lib/apt/lists/*",
   "check_command": "msmtp --version",
   "auth_script": "cat > ~/.msmtprc <<EOF\naccount default\nhost $SMTP_HOST\nport $SMTP_PORT\nauth on\nuser $SMTP_USER\npassword $SMTP_PASSWORD\ntls on\ntls_starttls on\nfrom $SMTP_FROM\nEOF\nchmod 600 ~/.msmtprc",
+  "skill_content": "# Sending Email with msmtp\n\nThe `msmtp` mail client is installed and configured via `~/.msmtprc`. The `sendmail` command is also available as an alias.\n\n## Send a simple email\n\n```bash\necho -e \"Subject: Hello\\n\\nThis is the body.\" | msmtp recipient@example.com\n```\n\n## Send with full headers\n\n```bash\ncat <<EOF | msmtp -t\nTo: recipient@example.com\nSubject: Report Ready\n\nThe daily report has been generated.\nEOF\n```\n\n## Send to multiple recipients\n\n```bash\ncat <<EOF | msmtp -t\nTo: alice@example.com, bob@example.com\nCc: manager@example.com\nSubject: Status Update\n\nAll tasks complete.\nEOF\n```\n\n## Send a file as the body\n\n```bash\n(echo \"Subject: Log Output\"; echo; cat /tmp/output.log) | msmtp recipient@example.com\n```",
   "env_vars": [
     {
       "key": "SMTP_HOST",

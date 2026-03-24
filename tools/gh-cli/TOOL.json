@@ -1,6 +1,7 @@
 {
   "install_commands": "",
   "check_command": "gh --version",
+  "skill_content": "# GitHub CLI (gh)\n\nThe `gh` CLI is pre-installed and authenticated via `GH_TOKEN`.\n\n## Common commands\n\n```bash\n# Clone a repo\ngh repo clone owner/repo\n\n# Create a pull request\ngh pr create --title \"Title\" --body \"Description\"\n\n# List open PRs\ngh pr list\n\n# View PR details\ngh pr view 123\n\n# Create an issue\ngh issue create --title \"Bug\" --body \"Details\"\n\n# List issues\ngh issue list --label bug\n\n# Query the GitHub API\ngh api repos/owner/repo/pulls --jq '.[].title'\n\n# Run a workflow\ngh workflow run build.yml\n\n# Check workflow status\ngh run list --workflow=build.yml\n```",
   "env_vars": [
     {
       "key": "GH_TOKEN",

@@ -1,0 +1,10 @@
+{
+  "format": "claw-tool-v1",
+  "id": "email",
+  "name": "Email (SMTP)",
+  "version": "1.0.0",
+  "author": "Claw Machine",
+  "license": "MIT",
+  "description": "Send emails via any SMTP server using msmtp. Works with Gmail, AWS SES, SendGrid, and any standard SMTP provider. Requires SMTP credentials.",
+  "tags": ["email", "smtp", "notifications"]
+}

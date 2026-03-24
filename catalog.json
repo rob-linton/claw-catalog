@@ -35,6 +35,14 @@
       "author": "Claw Machine",
       "description": "Azure CLI for managing Azure resources. Authenticates via service principal.",
       "tags": ["azure", "cloud", "devops", "infrastructure"]
+    },
+    {
+      "id": "email",
+      "name": "Email (SMTP)",
+      "version": "1.0.0",
+      "author": "Claw Machine",
+      "description": "Send emails via any SMTP server using msmtp. Works with Gmail, AWS SES, SendGrid, etc.",
+      "tags": ["email", "smtp", "notifications"]
     }
   ]
 }

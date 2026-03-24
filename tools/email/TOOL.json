@@ -1,0 +1,32 @@
+{
+  "install_commands": "apt-get update && apt-get install -y --no-install-recommends msmtp msmtp-mta ca-certificates && rm -rf /var/lib/apt/lists/*",
+  "check_command": "msmtp --version",
+  "auth_script": "cat > ~/.msmtprc <<EOF\naccount default\nhost $SMTP_HOST\nport $SMTP_PORT\nauth on\nuser $SMTP_USER\npassword $SMTP_PASSWORD\ntls on\ntls_starttls on\nfrom $SMTP_FROM\nEOF\nchmod 600 ~/.msmtprc",
+  "env_vars": [
+    {
+      "key": "SMTP_HOST",
+      "description": "SMTP server hostname (e.g., smtp.gmail.com, email-smtp.us-east-1.amazonaws.com).",
+      "required": true
+    },
+    {
+      "key": "SMTP_PORT",
+      "description": "SMTP server port. Use 587 for STARTTLS (recommended).",
+      "required": true
+    },
+    {
+      "key": "SMTP_USER",
+      "description": "SMTP username for authentication.",
+      "required": true
+    },
+    {
+      "key": "SMTP_PASSWORD",
+      "description": "SMTP password or app-specific password.",
+      "required": true
+    },
+    {
+      "key": "SMTP_FROM",
+      "description": "Default sender email address (From header).",
+      "required": true
+    }
+  ]
+}

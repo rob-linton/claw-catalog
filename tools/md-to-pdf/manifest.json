@@ -1,0 +1,10 @@
+{
+  "format": "claw-tool-v1",
+  "id": "md-to-pdf",
+  "name": "Markdown to PDF",
+  "version": "2.2.0",
+  "author": "Claw Machine",
+  "license": "MIT",
+  "description": "Convert Markdown files to beautifully formatted PDFs using Pandoc, XeLaTeX, and Mermaid CLI. Renders Mermaid diagrams (pie, bar, xychart, flowchart, etc.) as embedded PNG images via headless Chrome. Full pipeline: mermaid render → pandoc → xelatex → PDF. Wrapper at /tmp/md2pdf takes input.md output.pdf.",
+  "tags": ["pdf", "markdown", "pandoc", "reporting", "mermaid", "documents"]
+}

@@ -39,10 +39,18 @@
     {
       "id": "email",
       "name": "Email (SMTP)",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "Claw Machine",
-      "description": "Send emails via any SMTP server using msmtp. Works with Gmail, AWS SES, SendGrid, etc.",
-      "tags": ["email", "smtp", "notifications"]
+      "description": "Send emails via any SMTP server using msmtp (plain) or send-attachment (MIME multipart with file attachments). Works with AWS SES, Gmail, SendGrid, etc.",
+      "tags": ["email", "smtp", "notifications", "attachments"]
+    },
+    {
+      "id": "md-to-pdf",
+      "name": "Markdown to PDF",
+      "version": "2.2.0",
+      "author": "Claw Machine",
+      "description": "Convert Markdown to beautifully formatted PDFs via Pandoc + XeLaTeX, with full Mermaid diagram support (rendered to PNG via headless Chrome). Wrapper at /tmp/md2pdf.",
+      "tags": ["pdf", "markdown", "pandoc", "reporting", "mermaid"]
     }
   ]
 }
